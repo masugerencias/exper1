@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+
+      html{
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        box-sizing: border-box;
+        margin: auto !important;
+      }
+
+
+p, h1, h2{
+    color: #ec642b;
+    text-align: center;
+    font-size: inherit;
+}
+
+p{
+  margin: 20px;
+}
+
+hr{
+  width: inherit;
+}
+
+      .fixed-nav-bar {
+          align-items: flex-end;
+          background-color: #ec642b;
+          height: 80px;
+          justify-content: flex-end;
+          left: 0;
+          position: fixed;
+          top: 0;
+          width: 100%;
+          z-index: 9999;
+      }
+
+   .contenedorGrande{
+    display: flex;
+    margin-top: 10vh;
+    gap: 5vw;
+   }
+
+
+   .contenedor1{
+    width: 30vw;
+    margin-left: 5vw;
+  
+   }
+
+   .contenedor2{
+    background-color: green;
+    width: 60vw;
+   }
+
+   .contenidoContenedor1 {
+    background-color: white;
+    border-radius: 30px;
+    margin-top: 10vh;
+    height: inherit;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 10px 5px 5px #80808061;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+
+}
+
+   .contenidoContenedor2{
+    margin-top: 10vh;
+    height: 70vh;
+   }
+
+   .contenidoContenedor2 img{
+    height: 500px;
+   }
+
+
+   .parrafoDejanosAyudarte{
+    text-align: center;
+    margin-bottom: 20px;
+   }
+
+
+
+
+   .logoExpertNav, .logoExpert{
+    width: 150px;
+   }
+
+   .fixed-nav-bar img{
+margin-top: 15px;
+margin-left: 6vh;
+   }
+
+/* MEDIA QUERY */
+
+@media (max-width: 600px) {
+.contenidoContenedor2{
+  display: none;
+}
+ .contenidoContenedor1{
+  padding-bottom: 10vh;
+ } 
+
+ .contenedor1{
+  width: 90vw;
+ }
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="fixed-nav-bar">
+        <img class="logoExpertNav" src="./logo expert 1.png" />
+    </div>
+    <div class="contenedorGrande">
+      <div class="contenedor1">
+        <div class="contenidoContenedor1">
+        <img class="logoExpert" src="./logo expert 1.png" />
+        <hr />
+        <h2 class="dejanosAyudarteTitulo">DÉJANOS AYUDARTE</h2>
+        <hr />
+        <div class="parrafoDejanosAyudarte">
+          <p>
+            Para poder ofrecerte la mejor experiencia de compra, indícanos tu
+            provincia y resolvemos todas las dudas que te puedan surgir.
+          </p>
+         
+          <img class="chincheta"  src="./icono mapa.svg" style="width: 40px;"/>
+         
+        </div>
+        <!--         <button type="button" class="boton1" >Seleccionar provincia</button>
+ -->
+        <select name="po" class="select1">
+          <option value="JavaScript" class="ptionSelect1">Seleccionar</option>
+          <option value="php" class="ptionSelect1">PHP</option>
+          <option value="java">Java</option>
+          <option value="golang">Golang</option>
+          <option value="python">Python</option>
+          <option value="c#">C#</option>
+          <option value="C++">C++</option>
+          <option value="erlang">Erlang</option>
+        </select>
+      </div>
+    </div>
+      <div class="contenidoContenedor2">
+        <img class="imagenMapa" src="/localizador-tiendas-mapa 1.svg" />
+      </div>
+    </div>
+  </body>
+</html>
